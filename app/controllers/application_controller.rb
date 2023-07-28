@@ -1,5 +1,6 @@
 require 'sinatra'
-require 'pry'
+require 'json'
+require 'pry' 
 
 class ApplicationController < Sinatra::Base
   set :default_content_type, 'application/json'
@@ -52,8 +53,9 @@ delete '/products/:id' do
   products.to_json
 end
 
-get '/products/by_category' do 
-  Product.find(:all, :include => :categories, :conditions => ['category.name IN (?)', ['Cleanser', 'Toner', 'Moisturizers', 'Mask']])
+get '/products/by_category' do
+  products = Product.joins(:categories).where(categories: { name: ['Cleanser', 'Toner', 'Moisturizer', 'Mask'] })
+  products.to_json
 end
 
 # Categories
@@ -119,5 +121,4 @@ delete '/customers/:id' do
   customer.destroy
   customer.to_json
 end
-
 end

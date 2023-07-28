@@ -1,6 +1,7 @@
 class Order < ActiveRecord::Base
     belongs_to :customer
-    has_many :product
+    has_many :order_items,  dependent: :destroy
+    has_many :products, through: :order_items
 
-    validates :order_id, presence: true
+    validates :customer_id, presence: true
 end

@@ -1,0 +1,38 @@
+.cart {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 1rem;
+    width: 300px;
+  }
+  
+  .cart h2 {
+    margin-bottom: 1rem;
+  }
+  
+  .cart ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .cart li {
+    margin-bottom: 0.5rem;
+  }
+  
+  .cart li span {
+    display: block;
+  }
+  
+  .cart h3 {
+    margin-top: 1rem;
+  }
+  
+  .cart button {
+    padding: 0.5rem 1rem;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  

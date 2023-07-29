@@ -45,7 +45,7 @@ The app/controllers/application_controller.rb file has an example GET route hand
 You can start your server with:
 
 $ bundle exec rake server
-This will run your server on port http://localhost:9292.
+This will run your server on port http://localhost:9292
 
 Frontend Setup
 Your backend and your frontend should be in two different repositories.
@@ -58,7 +58,7 @@ After creating the project locally, you should also create a repository on GitHu
 Fetch Example
 Your React app should make fetch requests to your Sinatra backend! Here's an example:
 
-fetch("http://localhost:9292/test")
+fetch("http://localhost:9292/test)
   .then((r) => r.json())
   .then((data) => console.log(data));
 

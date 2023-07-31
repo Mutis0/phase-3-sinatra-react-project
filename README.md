@@ -1,4 +1,5 @@
-# Phase 3 Project React Frontend Link
+# Phase 3 Project - ECO-GLOW
+
 https://github.com/Mutis0/eco-glow-frontend
 
 Eco Glow - Skin Care Website
